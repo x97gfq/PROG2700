@@ -15,6 +15,9 @@ body {
 .container h1:hover {
   color: #cc2eac;
 }
+.container h2 {
+  color: blue;
+}
 .container p {
   line-height: 1.5;
   margin-bottom: 20px;
