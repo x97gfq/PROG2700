@@ -63,9 +63,11 @@ function validateForm(event) {
         lastname.style.backgroundColor = "white";
     }
 
-    if (!form_ok) alert("you need to correct some errors on your form before you can submit.")
-
-    return form_ok;
+    if (!form_ok) {
+        alert("you need to correct some errors on your form before you can submit.")
+        event.preventDefault();
+    }
+    //return form_ok;
 }
 
 
