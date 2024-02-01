@@ -10,7 +10,11 @@ function playGame() {
     player.attack(enemy);
     
     // If you want to allow the enemy to counterattack
-    // enemy.attack(player);
+    enemy.attack(player);
+    
+    player.attack(enemy);
+    
+    enemy.attack(player);
     
     // You can add more interactions, like checking if the enemy is defeated, 
     // adding more enemies, or creating a loop for multiple turns.
