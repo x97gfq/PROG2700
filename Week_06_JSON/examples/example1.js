@@ -1,19 +1,19 @@
 
 let str = "Welcome to NSCC";
 
+//load the HTML file using LIVE SERVER and Open the CONSOLE in your BROWSER
 console.log("length of [", str, "] is ",str.length);
 
-for (let i = 0; i <= str.length; i++) {
+for (let i = 0; i < str.length; i++) {
     console.log("letter at position ",i," is ",str[i]);
 }
+
 if (str[0].toUpperCase() == "W") {
-    alert("nailed it");
+    console.log("nailed it");
     //
-    alert("same");
 } else {
-        alert("not it");
+    console.log("not it");
     //
     //
 }
-
 
