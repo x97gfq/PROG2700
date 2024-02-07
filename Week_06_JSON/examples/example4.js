@@ -20,16 +20,21 @@ for (var i = 0; i < json.students.length; i++) {
     console.log(json.students[i].grade);
 }
 
-
+/*
 var fred = json.students.find(x=> x.name == "Fred");
-fred.grade++;
+fred.grade += 10;
 console.log("fred",fred)
-
+*/
 
 console.log("using forEach:")
 json.students.forEach(function (item, index) {
     console.log(item);
-    if (item.name == "Fred") item.grade++;
+    if (item.name == "Fred") {
+        item.grade += 10;
+    }
+    if (item.name == "Barney") {
+        item.grade -= 10;
+    }
     console.log(item.name);
     console.log(item.grade);
   });
