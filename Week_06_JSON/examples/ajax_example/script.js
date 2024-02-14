@@ -1,5 +1,5 @@
 
-const API_KEY = "2ad263b9a82888fd39382d86aa2fc030";
+const API_KEY = "";
 
 function getWeatherInfo() {
     // Check if the Geolocation API is available in the user's browser
