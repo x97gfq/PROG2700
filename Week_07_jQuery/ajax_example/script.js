@@ -7,7 +7,7 @@ function getTriviaQuestion() {
 
     // Make an AJAX request to the API
     $.ajax({
-        url: url,
+        url: myUrl,
         url: myUrl,
         type: 'GET',
         dataType: 'json',
