@@ -1,20 +1,33 @@
 
 
 
-function getAnswer() {
+function getQuote() {
+    var fortuneUrl = "https://api.justyy.workers.dev/api/fortune";
 
-    var question = $("#question").val();
+    $("#message").fadeOut();
 
-    alert(question);
+    $.ajax(
+        {
+            url: fortuneUrl, 
+            success: function(result){
+                $("#message").html(result);
 
-    $("#question").val("");
+                setTimeout(function() {
+                    $("#message").fadeIn();
+                    $("#message").animate({fontSize: "2em"});
+                    $("#message").animate({fontSize: "1em"});
+                },100);
+                
+            }
+        }
+    );
 }
 
 $(document).ready(function() {
     console.log("ready!");
 
-    $("#submitQuestion").click(function(){
-        getAnswer();
+    $("#getFortune").click(function(){
+        getQuote();
     });
 
 });
