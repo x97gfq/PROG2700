@@ -2,7 +2,7 @@
 function getQuote() {
     var fortuneUrl = "https://api.justyy.workers.dev/api/fortune";
 
-    $("#message").fadeOut();
+    $("#message").hide();
 
     $.ajax(
         {
@@ -14,7 +14,7 @@ function getQuote() {
                     $("#message").fadeIn();
                     $("#message").animate({fontSize: "2em"});
                     $("#message").animate({fontSize: "1em"});
-                },100);
+                },250);
             }
         }
     );
