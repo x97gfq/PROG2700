@@ -45,8 +45,7 @@ function getHospitalLocations() {
 
                     //info window popup
                     const infowindow = new google.maps.InfoWindow({
-                        content: "<p style='color: black;'>" + hospital.town + "</p>",
-                        ariaLabel: hospital.name,
+                        content: "<p style='color: black;'>" + hospital.name + "<br/>" + hospital.town + "</p>"
                     });
 
                     //hospital icon source: https://www.flaticon.com/free-icons/hospital
@@ -54,7 +53,7 @@ function getHospitalLocations() {
                         position: { lat: hospital.longitude, lng: hospital.latitude },
                         icon:'hospital_icon.png',
                         animation: google.maps.Animation.DROP, //BOUNCE
-                        label: hospital.name
+                        /*label: hospital.town*/
                     });
 
                     //add a click event to the marker for the infowindow
