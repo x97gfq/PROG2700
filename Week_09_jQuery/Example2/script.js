@@ -77,7 +77,7 @@ var map;
 function initializeMap() {
 
     var mapProperties = {
-        center :new google.maps.LatLng(43.8528801,-66.1043946),
+        center: new google.maps.LatLng(43.8528801,-66.1043946),
         zoom: 8
     };
 
