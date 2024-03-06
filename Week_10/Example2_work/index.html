@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Crime Stats</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container-fluid bg-dark text-light" style="min-height: 100vh; width: 100vw;">
+            
+            <h1>Nova Scotia Crime Statcs By Region</h1>
+
+            <P>Based on data (total severity index, incidents per 100k population) from https://data.novascotia.ca/Crime-and-Justice/Crime-Statistics-Crime-Severity-Index/w64p-5ue3/about_data.</P>
+
+            <br/>
+            <select id="region">
+                <option>...</option>
+            </select>
+            <br/>
+            <button id="getStats">Get Statistics</button>
+            <br/>
+
+            <table>
+                <tr>
+                    <td style="width: 30%;" valign="top">
+            
+                        <h1 id="heading"></h1>
+                        <div id="data">
+            
+                        </div>
+                    </td>
+                    <td valign="top">
+                        <p>Put CHART here.</p>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
