@@ -23,7 +23,7 @@ function getCrimeStats(region) {
     //Example: https://data.novascotia.ca/resource/w64p-5ue3.json?geography=Richmond County, Nova Scotia, Royal Canadian Mounted Police, rural [12016]
 
     var crimeUrl = "https://data.novascotia.ca/resource/w64p-5ue3.json?geography=" + region;
-    
+    crimeStats = [];
     $.ajax(
         {
             url: crimeUrl, 
